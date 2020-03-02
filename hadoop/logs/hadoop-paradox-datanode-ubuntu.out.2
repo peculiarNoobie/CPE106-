@@ -1,0 +1,41 @@
+Exception in thread "Thread-1" java.lang.RuntimeException: com.ctc.wstx.exc.WstxParsingException: Unexpected '<' character in element (missing closing '>'?)
+ at [row,col,system-id]: [21,1,"file:/home/paradox/hadoop/etc/hadoop/hdfs-site.xml"]
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3024)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2968)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2848)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1200)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1812)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1789)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Caused by: com.ctc.wstx.exc.WstxParsingException: Unexpected '<' character in element (missing closing '>'?)
+ at [row,col,system-id]: [21,1,"file:/home/paradox/hadoop/etc/hadoop/hdfs-site.xml"]
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:621)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:491)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:475)
+	at com.ctc.wstx.sr.BasicStreamReader.handleNsAttrs(BasicStreamReader.java:3088)
+	at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:3043)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2919)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1123)
+	at org.apache.hadoop.conf.Configuration$Parser.parseNext(Configuration.java:3320)
+	at org.apache.hadoop.conf.Configuration$Parser.parse(Configuration.java:3114)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3007)
+	... 9 more
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 38555
+max locked memory       (kbytes, -l) 16384
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 38555
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
