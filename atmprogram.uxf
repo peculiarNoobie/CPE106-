@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>60</y>
+      <w>270</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>fontsize=12
+
+user
+--
++name: str
++pin: int
++amount: int
++status: str
+--
++self.nameField.getText()
++self.pinField.getText()
++self.account = self.bank.get(name,pin)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>50</y>
+      <w>310</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>fontsize=12
+
+ATM machine
+--
++name: str
++pin: int
++amount: int
++status: str
+--
++self.statusField.setText("Hello, " + name + "!")
++self.balanceButton["state"] = "normal"
++self.depositButton["state"] = "normal"
++self.withdrawButton["state"] = "normal" </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>130</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
