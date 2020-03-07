@@ -3,7 +3,7 @@
 """
 Created on Sat Mar 7 04:02:31 2020
 
-Author: paradox
+Author: josh
 
 """
 import random
