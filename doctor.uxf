@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>130</y>
+      <w>250</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Doctor
+--
+-hedges: String
+-qualifiers: String
+-replacements: String
+--
+-bye(self): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
